@@ -1,10 +1,9 @@
 <h1>All Users</h1>
 
-<% will_paginate %>
+<%= will_paginate %>
 <ul class="users">
 	<% @users.each do |user|  %>
-		<%= render @users %>
+		<%= render user %>
 	<% end  %>
 </ul>
-
-<% will_paginate %>
+<%= will_paginate %>
