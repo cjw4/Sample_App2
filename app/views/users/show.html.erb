@@ -19,6 +19,7 @@
       <strong>Name</strong> <%= @user.name %><br />
       <strong>URL</strong>  <%= link_to user_path(@user), @user %><br />
 	  <strong>Microposts</strong> <%= link_to @user.microposts.count, user_microposts_path(@user) %>
+	  <%= render 'shared/stats' %>
     </td>
   </tr>
 </table>
