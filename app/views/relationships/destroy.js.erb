@@ -1,2 +1,2 @@
-$("#follow_form").load("<%= escape_javascript(render('users/follow')) %>")
-$("#followers").load('<%= "#{@user.followers.count} followers" %>')
+$("#follow_form").html("<%= escape_javascript(render('users/follow')) %>")
+$("#followers").text('<%= "#{@user.followers.count} followers" %>')
